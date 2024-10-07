@@ -21,7 +21,7 @@ def detect(filepath, file):
     lower_green = np.array([40,50,50])
     upper_green = np.array([90,255,255])
     lower_yellow = np.array([15,150,150])
-    upper_yellow = np.array([35,255,255])
+    upper_yellow = np.array([65,255,255])
     mask1 = cv2.inRange(hsv, lower_red1,   upper_red1)
     mask2 = cv2.inRange(hsv, lower_red2,   upper_red2)
     maskg = cv2.inRange(hsv, lower_green,  upper_green)
@@ -45,7 +45,7 @@ def detect(filepath, file):
     print("g_________")
     print(g_circles)
     print("y_________")
-    print(y_circles)
+    print(m_circles)
     # 1024*768
     # traffic light detect
     r = 5
